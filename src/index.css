@@ -146,12 +146,18 @@ body{
   gap: 10px;
   margin-top: 10px;
   flex-wrap: wrap;
+  
 }
 .topics__container p{
   border: 2px solid grey;
   padding: 10px;
   flex-grow: 1;
   flex-basis: 25%;
+  cursor: pointer;
+}
+.topics__container p:hover{
+  background-color: rgb(224, 224, 224);
+  transition-duration: .3s;
 }
 .popular{
   padding: 10px;
@@ -199,5 +205,18 @@ body{
   }
   .navbar__s4{
       display: block;
+  }
+}
+@media screen and (max-width:380px){
+  .sale-image__offer h2{
+    font-size: 12px;
+  }
+  .sale-image__offer p{
+    font-size: 8px;
+  }
+}
+@media screen and (max-width:820px){
+  .categories p{
+    font-size: 14px;
   }
 }
